@@ -3,7 +3,6 @@ import axios from 'axios';
 import {store } from './data/store'
 
 import AppHeader from './components/AppHeader.vue';
-import AppMain from './components/AppMain.vue';
 import CharacterList from './components/CharacterList.vue';
 
 export default {
@@ -15,7 +14,6 @@ export default {
   },
   components:{
     AppHeader,
-    AppMain,
     CharacterList
   },
   methods:{
@@ -37,7 +35,6 @@ export default {
 </script>
 <template>
   <AppHeader/>
-  <AppMain/>
   <CharacterList />
 </template>
 
