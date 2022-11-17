@@ -16,6 +16,19 @@ import CharacterCard from './CharacterCard.vue';
 </script>
 <template>
 <main>
+    <div class="select-button">
+        
+        <div class="dropdown">
+            <select name="selection" aria-label="" type="button" class="btn btn-secondary dropdown-toggle">
+                <option selected>Select Category</option>
+                <option value="1">uno</option>
+                <option value="2">due</option>
+                <option value="3">tre</option>
+            </select>
+            
+        </div>
+
+    </div>
     <div class="ft-container">
         <div class="ft-row">
             <div class="result">
@@ -42,7 +55,7 @@ import CharacterCard from './CharacterCard.vue';
 
 .ft-container{
     padding: 20px 30px;
-    margin:50px auto;
+    margin:30px auto;
     max-width: 1200px;
     width: 100vw;
     background-color: white;
@@ -67,5 +80,9 @@ import CharacterCard from './CharacterCard.vue';
     }
 }
 
+.select-button{
+    margin: 0 auto;
+    max-width: 1200px;
+}
 
 </style>
