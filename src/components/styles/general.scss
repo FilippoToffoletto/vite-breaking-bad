@@ -1,14 +1,11 @@
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
-@import 'node_modules/@fontsource/open-sans/scss/index.css';
-@import 'node_modules/@fontsource/open-sans/scss/600.css';
-@import 'node_modules/@fontsource/open-sans/scss/700.css';
-@import 'node_modules/@fontsource/open-sans/scss/800.css';
 @import './partials/variables'; 
 
 body{
     background-color: $primary-color;
-    font-family: "Open Sans", sans-serif;;
+    font-family: "Open Sans", sans-serif;
     color: white;
+    min-height: 100vh;
 }
 
 h1,

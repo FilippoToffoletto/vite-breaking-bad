@@ -6,7 +6,9 @@
 </script>
 <template>
   <header>
-    <h1>ciao</h1>
+    <div class="container py-2 text-star">
+        <h1>Breaking Bad</h1>
+    </div>
   </header>
 </template>
 
