@@ -22,7 +22,8 @@ export default {
     getCharacters(){
       axios.get(store.apiUrl)
     .then(result => {
-      console.log(result.data)
+      store.charactersListData = result.data
+      console.log(store.charactersListData)
     })
     .catch(error => {
       console.log(error)
@@ -37,6 +38,7 @@ export default {
 <template>
   <AppHeader/>
   <AppMain/>
+  <CharacterList />
 </template>
 
 
