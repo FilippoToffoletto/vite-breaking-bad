@@ -18,10 +18,13 @@ export default {
   },
   methods:{
     getCharacters(){
-      axios.get(store.apiUrl)
+      axios.get(store.apiUrl, {
+        params:{
+          category:store.categoryToSearch
+        }
+      })
     .then(result => {
-      store.charactersListData = result.data
-      console.log(store.charactersListData)
+      store.charactersListData = result.data;
     })
     .catch(error => {
       console.log(error)
@@ -35,7 +38,7 @@ export default {
 </script>
 <template>
   <AppHeader/>
-  <CharacterList />
+  <CharacterList @startSearch='getCharacters()'/>
 </template>
 
 
